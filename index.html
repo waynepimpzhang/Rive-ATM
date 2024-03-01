@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ATM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/layout.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+<!-- <script src="js/gsap/gsap.min.js"></script>
+<script src="js/gsap/CustomEase.min.js"></script>
+<script src="js/gsap/CustomWiggle.min.js"></script> -->
+<script src="js/crypto-js.js"></script>
+<script defer src="js/login.js"></script>
+</head>
+<body>
+
+<div class="preloader">
+<audio id="fxHover" src="sound/fx2.mp3" preload controls></audio>
+<audio id="fxError" src="sound/error.mp3" preload controls></audio>
+<audio id="fxSuccess" src="sound/success.mp3" preload controls></audio>
+</div>
+
+
+<div id="loginBox" class="loginBox ofh">
+	<div class="dot">
+		<div class="loginCenter">
+			<canvas class="loginCanvas" id="loginRive" width="700" height="700"></canvas>
+			<div class="loginInput">
+				<!-- <img src="images/username.png" alt="" class="oui" oui="Type in account name.">
+				<img src="images/password.png" alt="" class="oui" oui="Type in account password associate to account name.">
+				<img id="tryLogin" src="images/login_button.png" alt=""> -->
+				<input type="text" id="iAcc" placeholder="USERNAME" class="oui iAcc" oui="Type in account name.">
+				<input type="text" id="iPwd" placeholder="PASSWORD" class="oui iPwd" oui="Type in account password associate to account name.">
+			</div>
+		</div>
+		
+		
+	</div>
+	<div id="loginDate" class="loginDate">-2024-02-20-</div>
+	<canvas id="overCan"class="overCan"></canvas>
+</div>
+
+<script>
+
+
+
+</script>
+
+
+</body>
+</html>
