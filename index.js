@@ -1,20 +1,28 @@
-const menuBtn = document.querySelector('.menu-btn');
-const backBtn = document.querySelector('.back-btn');
+// javascript
+
+const menuBtn = document.querySelector('.menu');
+const panel = document.querySelector('.filter');
+const panelStyles = window.getComputedStyle(panel);
+const hearts = document.querySelectorAll('.far');
 
 menuBtn.addEventListener('click', () => {
-    gsap.to("nav", { x: 0, xPercent: 0, duration: .3, ease: "expo.inOut" });
-    gsap.to('body',{
-        duration: 3,
-        '--degree': '45deg',
-        ease: "expo.Out"
-    })
+    if (panelStyles.getPropertyValue('clip-path') === 'circle(0% at 100% 0%)') {
+        panel.style.clipPath = 'circle(100% at 50% 50%)'
+    }
+    else {
+        panel.style.clipPath = 'circle(0% at 100% 0%)'
+    }
 })
 
-backBtn.addEventListener('click', () => {
-    gsap.to("nav", { xPercent: -100, duration: .3, ease: "expo.inOut" });
-    gsap.to('body',{
-        duration: 3,
-        '--degree': '220deg',
-        ease: "expo.Out"
-    })
+document.addEventListener('mouseup', (event) => {
+    if (panelStyles.getPropertyValue('clip-path') === 'circle(100% at 50% 50%)') {
+        if (!panel.contains(event.target))
+            panel.style.clipPath = 'circle(0% at 100% 0%)'
+
+    }
 })
+
+function changeHeart(x) {
+    x.classList.toggle("fas")
+    x.classList.toggle("far")
+}

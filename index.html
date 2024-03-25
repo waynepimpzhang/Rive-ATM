@@ -3,47 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" cars="width=device-width, initial-scale=1.0">
+    <title>Car Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0505d45c82.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="container">
-        <div class="left-col">
-            <nav>
-                <img src="./images/arrow.svg" class="back-btn">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">My Stats</a></li>
-                    <li><a href="#">Members</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section>
-            <header>
-                <img src="./images/menu.svg" class="menu-btn">
-                <p class="logo">Logo</p>
-            </header>
-            <div class="cv">
-                <div class="content">
-                    <h1>Data Analytics</h1>
-                    <p>Making sense of your traffic.</p>
-                    <a href="#" class="cta">Go to my stats</a>
+        <header>
+            <div class="headings">
+                <h1>Available Cars</h1>
+                <p>There are 15 cars that match your criteria</p>
+            </div>
+            <div class="option">
+                <div class="icons">
+                    <input type="text" class="search">
+                    <img src="./assets/menu.svg" class="menu">
+                </div>
+
+                <div class="filter">
+                    <div class="chk-container">
+                        <input type="checkbox" id="new">
+                        <label for="new">New cars</label>
+                    </div>
+                    <div class="chk-container">
+                        <input type="checkbox" id="used">
+                        <label for="used">Used cars</label>
+                    </div>
+                    <div class="chk-container">
+                        <input type="checkbox" id="dealer">
+                        <label for="dealer">Dealership</label>
+                    </div>
+                    <div class="chk-container">
+                        <input type="checkbox" id="owner">
+                        <label for="owner">For sale by owner</label>
+                    </div>
                 </div>
             </div>
-        </section>
+        </header>
+        <main>
+            <div class="lables">
+                <p class="lbl-details">Car Details</p>
+                <p class="lbl-location">Location</p>
+                <p class="lbl-price">Price</p>
+                <p class="lbl-action">Action</p>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+            <div class="cars">
+                <a href="" class="car-name">2017 Toyota Hightlander V4</a>
+                <p class="car-location">1994 scrimba Ln<br>Youngstown, OH 44481</p>
+                <div class="cols-2">
+                    <p class="car-price">$17,400</p>
+                    <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+        </main>
     </div>
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </body>
 
 </html>
